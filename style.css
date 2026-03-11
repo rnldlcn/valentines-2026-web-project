@@ -75,7 +75,7 @@ h1, h2 {
 }
 
 .date:hover::after {
-    content: " And counting.";
+    content: " - 2026.";
     color: var(--accent-color);
 }
 
@@ -818,4 +818,16 @@ body {
     font-style: italic;
     margin-top: 15px;
     margin-bottom: 0;
+}
+
+
+.album-photo, .photo-frame img {
+    filter: grayscale(100%) contrast(90%);
+    transition: all 0.5s ease;
+}
+
+
+.album-wrapper:hover .album-photo, 
+.photo-frame:hover img {
+    filter: grayscale(0%) contrast(100%);
 }
